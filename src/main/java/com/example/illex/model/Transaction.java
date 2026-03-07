@@ -13,8 +13,14 @@ public class Transaction {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private long id;
 
-    private String type; // Income or Expense
+    @Enumerated(EnumType.STRING)
+    @Column(nullable=false)
+    private TransactionType type; // Income or Expense
+
+    @Column(nullable=false)
     private String category;
+
+    @Column(nullable=false)
     private String description;
 
     @Column(nullable=false)
@@ -27,13 +33,15 @@ public class Transaction {
     @JoinColumn(name="user_id", nullable = false)
     private User user;
 
+    private LocalDateTime createdAt;
+
 
     public Transaction (){}
 
     public long getId(){return id;}
 
-    public String getType(){return type;}
-    public void setType(String type){this.type = type;}
+    public TransactionType getType(){return type;}
+    public void setType(TransactionType type){this.type = type;}
 
     public String getCategory(){return category;}
     public void setCategory(String category){this.category = category;}
