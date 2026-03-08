@@ -99,18 +99,12 @@ Examples:
 
 Illex aims to become **more than a financial tracker**.
 
-Future versions will focus on:
+Future versions will also focus on:
 
 - Behavioral financial analysis
 - Automated financial insights
 - Portfolio and investment analysis
 - Integration with financial APIs (OpenFinance, Finnhub, etc.)
-
----
-
-# Project Status
-
-🚧 **Active development**
 
 ---
 

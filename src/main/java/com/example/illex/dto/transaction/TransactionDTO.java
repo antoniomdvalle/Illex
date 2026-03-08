@@ -38,4 +38,7 @@ public class TransactionDTO {
 
     public BigDecimal getAmount(){return amount;}
     public void setAmount(BigDecimal amount){this.amount = amount;}
+
+    public LocalDateTime getDate(){return time;}
+    public void setDate(LocalDateTime time){this.time = time;}
 }
